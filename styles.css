@@ -1,13 +1,12 @@
 body
 {
-    font-family: Candara;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #F0F0F0;
+    background-color: #F0F0F0 !important;
 }
 #qrcode
 {
@@ -18,10 +17,22 @@ input
     padding: 10px;
     font-size: 16px;
     margin-bottom: 10px;
+    width: 25%;
 }
 button
 {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+i
+{
+    color: black;
+    transition: 0.5s;
+    font-size: 25px;
+}
+i:hover
+{
+    color: darkgrey;
+    transition: 0.5s;
 }

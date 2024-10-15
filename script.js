@@ -5,3 +5,4 @@ function generateQRCode()
     qrcodeContainer.innerHTML="";
     new QRCode(qrcodeContainer,text);
 }
+document.getElementById("year").innerHTML=new Date().getFullYear();

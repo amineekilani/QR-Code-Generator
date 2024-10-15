@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>QR Code Generator</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="QR.png">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     <body>
-        <h1>QR Code Generator by <em>Amine Kilani</em></h1>
-        <input type="text" id="text" placeholder="Enter text to generate QR code">
-        <button onclick="generateQRCode()">Generate QR Code</button>
-        <div id="qrcode"></div>
+        <div class="container text-center my-5">
+            <h1>QR Code Generator by <em>Amine Kilani</em></h1>
+            <input type="text" id="text" class="form-control w-25 mx-auto my-3" placeholder="Enter text to generate QR code">
+            <button class="btn btn-outline-secondary" onclick="generateQRCode()">Generate QR Code</button>
+            <div id="qrcode" class="my-4 d-flex justify-content-center"></div>
+        </div>
+        <footer class="py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/aminekilani"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/amineekilani"><i class="bi bi-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="text-muted text-center">&copy; <span id="year"></span> Amine Kilani. All Rights Reserved.</p>
+            </div>
+        </footer>
         <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     </body>
